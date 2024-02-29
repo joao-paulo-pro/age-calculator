@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <link rel="stylesheet" href="/age-calculator-app-main/style.css">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+<body>
+  <main class="container">
+      <div class="container_box_form">
+
+        <form id="form" class="container_box_form_date">
+
+          <div class="form_date">
+            <div class="form">
+              <label id="label_day" class="form_date_label" for="input_day">Day</label>
+
+              <div>
+                <input id="input_day" class="from_date_input" type="text" placeholder="DD" maxlength="2" pattern="\d*">
+                <p id="error_day"></p>
+              </div>
+            </div>
+
+            <div class="form">
+              <label id="label_month" class="form_date_label" for="input_month">Month</label>
+
+              <input id="input_month" class="from_date_input" type="text" placeholder="MM" maxlength="2" pattern="\d*">
+              <p id="error_month"></p>
+            </div>
+
+            <div class="form">
+              <label id="label_year" class="form_date_label " for="input_year">Year</label>
+
+              <input id="input_year" class="from_date_input" type="text" placeholder="YYYY" maxlength="4" pattern="\d*">
+              <p id="error_year"></p>
+            </div>
+          </div>
+          
+          <div class="form_date_button_box">
+            <span class="form_date_btn_line"></span>
+            <button id="btn_form" class="form_date_btn" type="submit">
+              <img class="form_date_btn_img" src="/age-calculator-app-main/assets/images/icon-arrow.svg" alt="button">
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="container_box_age">
+        <p class="age"><span id="years" class="age_number">--</span>years</p>
+        <p class="age"><span id="months" class="age_number">--</span>months</p>
+        <p class="age"><span id="days" class="age_number">--</span>days</p>
+      </div> 
+    </div>
+  </main>
+
+  <script src="/age-calculator-app-main/script.js"></script>
+
+</body>
+<!-- <div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">Your Name Here</a>.
+</div> -->
+</html>
